@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>pagina 5</title>
+    </head>
+    <body>
+        <h1 style="color: deeppink">Benvenuto nella pagina 5</h1>
+    
+        <p>
+        esercizio from registrazione
+        </p>
+    
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome"><br><br>
+            
+            <label for="codice fiscale">Codice Fiscale:</label>
+            <input type="text" id="codiceFiscale" name="codice fiscale"><br><br>
+
+            <label for="sesso">Sesso:</label> //controllo con id
+            <input type="radio" id="femmina" name="sesso" value="signora">
+            <label for="femmina">F</label>
+            <input type="radio" id="maschio" name="sesso" value="signore">
+            <label for="maschio">M</label><br><br>
+
+            <label for="anno">Anno di Nascita:</label>
+            <select id="anno" name="anno">
+                <option value="">Seleziona l'anno</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <!-- Aggiungi altre opzioni di anno -->
+            </select><br><br>
+
+            <label for="accetta">Accetta i termini e del servizio:</label>
+            <input type="checkbox" id="accetta" name="accetta"><br><br>
+
+            <input type="submit" value="registrazione">
+        </form>
+    <div id="messaggio"></div>
+        <a href="../index.html">← Torna alla Home</a>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+table{
+
+    border-collapse: collapse;
+    margin: 30px;
+    width: 50%;
+}
+
+h1{
+    color : #f420db;
+}
+
+td{
+    padding : 10px;
+    text-align: center;
+}
+
+.dispari{
+    background-color: #f29595;
+}   

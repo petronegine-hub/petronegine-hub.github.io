@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Esempio di funzione JavaScript</title>
+    <script>
+        // Questa funzione verrà chiamata quando l'utente clicca il bottone
+        function cambiaTesto() {
+            document.getElementById("2").innerHTML = "Hello JavaScript!";
+        }
+                // Funzione che accende la "lampadina"
+        function accendiLuce() {
+            document.getElementById("lampadina").src = "pic_bulbon.gif";
+        }
+
+        // Funzione che spegne la "lampadina"
+        function spegniLuce() {
+            document.getElementById("lampadina").src = "pic_bulboff.gif";
+        }
+
+        function modificatesto() {
+            document.getElementById("titolo").innerHTML = "Nuovo testo!";
+        }
+
+        function agginungiEvento() {
+            document.getElementById("nuovo_testo").addEventListener("click", modificatesto);
+        }
+        window.onload = agginungiEvento;
+
+    </script>
+</head>
+
+<body>
+
+    <h2 id="demo">cosa puoi fare con javascript?</h2>
+
+    <p id="saluto">javascript può cambiare il contenuto HTML.</p>
+
+    <button type="button" onclick="cambiaTesto()" id="2">Clicca QUI!</button>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="nuovo_testo">JavaScript can change HTML attribute values.</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button type="button" onclick="accendiLuce()">Turn on the light</button>
+
+    <img id="lampadina" src="pic_bulboff.gif" style="width:100px">
+
+    <button type="button" onclick="spegniLuce()">Turn off the light</button>
+
+    <h1 id="titolo">Testo originale</h1>
+
+    <button id="24">Modifica testo</button>
+
+    <a href="../index.html">← Torna alla Home</a>
+</body>
+</html>
