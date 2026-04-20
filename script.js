@@ -36,3 +36,19 @@ function generaTabella() {
 
   document.getElementById("tabella").innerHTML = tabella;
 }
+
+function generaAnni()
+{
+  Selezione=document.getElementById("anno");
+  anno=1996;
+  for(i=0;i<30;i++)
+  {
+    opzione=document.createElement("option");
+    opzione.value=anno;
+    opzione.text=anno;
+    Selezione.appendChild(opzione);
+    anno++;
+  }
+  
+}
+generaAnni();
