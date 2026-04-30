@@ -1,0 +1,36 @@
+ *, *::before, *::after { box-sizing: border-box; }
+li 
+{
+color: blue;
+background-color: greenyellow;
+}
+
+li a
+{
+    color: red;
+}
+
+section  p
+{
+    color: blue;
+}
+
+section p + p
+{
+    color: rgb(236, 35, 236);
+}
+
+article p 
+{
+    background:  #9fcbeb;
+}
+
+article p + p
+{
+    background: none;
+}
+
+figcaption
+{
+    background-color: rgb(215, 215, 215);
+}

@@ -1,19 +1,34 @@
-table{
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%;
+    padding: 2rem;
+    border: 2px solid #e0e0e0;
+}
+
+table
+{
 
     border-collapse: collapse;
     margin: 30px;
     width: 50%;
 }
 
-h1{
+h1
+{
     color : #f420db;
 }
 
-td{
+td
+{
     padding : 10px;
     text-align: center;
 }
 
-.dispari{
+.dispari
+{
     background-color: #f29595;
 }   
