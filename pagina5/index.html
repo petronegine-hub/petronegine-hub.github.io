@@ -20,9 +20,9 @@
             <input type="text" id="codiceFiscale" name="codice fiscale"><br><br>
 
             <label for="sesso">Sesso:</label> //controllo con id
-            <input type="radio" id="femmina" name="sesso" value="signora">
+            <input type="radio" id="femmina" name="sessoGR" value="signora">
             <label for="femmina">F</label>
-            <input type="radio" id="maschio" name="sesso" value="signore">
+            <input type="radio" id="maschio" name="sessoGR" value="signore">
             <label for="maschio">M</label><br><br>
 
             <label for="anno">Anno di Nascita:</label>
@@ -40,10 +40,11 @@
             <label for="accetta">Accetta i termini e del servizio:</label>
             <input type="checkbox" id="accetta" name="accetta"><br><br>
 
-            <input type="submit" value="registrazione">
+            <input type="submit" value="registrazione" onclick="registato()">
         </form>
         <div id="messaggio"></div>
         <a href="../index.html">← Torna alla Home</a>
         <script src="/petronegine-hub.github.io/script.js"></script> 
+        <script src="./script5.js"></script> 
     </body>
 </html>
