@@ -75,3 +75,5 @@ function controlloCompilazioneCampi()
     }
     return controllo;
     }
+
+    // dati angrafici, data di nascita, domande, esito, basta che sianno dei semplici h2

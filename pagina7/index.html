@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link rel="stylesheet" href="../stilepagine.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <form id="quizForm">
+        <div class="sezione">
+            <h2>Dati anagrafici</h2><br>
+            <label>Cognome:</label><input type="text" id="cognome" required>
+            <label>Nome:</label><input type="text" id="nome" required>
+        </div>
+        <div class="sezione">
+            <h2>Data di nascita</h2><br>
+            <label>Giorno</label><input type="number" id="giorno" min="1" max="31" required>
+            <label>Mese</label>
+            <select id="mese" required>
+                <option value="GEN">GEN</option>
+                <option value="FEB">FEB</option>
+                <option value="MAR">MAR</option>
+                <option value="APR">APR</option>
+                <option value="MAG">MAG</option>
+                <option value="GIU">GIU</option>
+                <option value="LUGL">LUGL</option>
+                <option value="AGO">AGO</option>
+                <option value="SET">SET</option>
+                <option value="OTT">OTT</option>
+                <option value="NOV">NOV</option>
+                <option value="DIC">DIC</option>
+            </select>
+            <label>Anno</label><input type="number" id="anno" min="1900" max="2026" required>
+        </div>     
+        <div class="sezione">
+            <h2>Domande</h2>
+            
+            <p>1. Qual è il linguaggio di programmazione utilizzato per creare e modificare i database? (in maiuscolo)</p>
+            <input type="text" id="risp1">
+
+            <p>2. Quanti valori può assumere una variabile booleana?</p>
+            <select id="risp2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="256">256</option>
+            </select>
+
+            <p>3. Quali sono le librerie caricate a run-time?</p>
+            <input type="radio" name="risp3" value="Statiche"> Statiche<br>
+            <input type="radio" name="risp3" value="Dinamiche"> Dinamiche
+
+            <p>4. Quali tra queste sono parole chiave in C++?</p>
+            <input type="checkbox" name="risp4" value="void"> void<br>
+            <input type="checkbox" name="risp4" value="integer"> integer<br>
+            <input type="checkbox" name="risp4" value="char"> char
+
+            <p>5. 8 bit corrispondono a un...</p>
+            <input type="text" id="risp5">
+        </div>
+
+
+        <button type="button" onclick="elabora()">Elabora</button>
+        <button type="reset">Cancella</button>
+        
+        <div class="sezione" style="margin-top:20px;">
+            <h2>Esito</h2><br>
+            <label>Punteggio:</label> <input type="text" id="punteggio" readonly>
+            <br><br>
+            <button type="button" onclick="calcolaCodice()">Utente con punteggio</button>
+            <input type="text" id="codiceUtente" style="width:300px;" readonly>
+        </div>
+    </form>
+        <a href="../index.html">← Torna alla Home</a>
+        <script src="/petronegine-hub.github.io/script.js"></script> 
+        <script src="./script7.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+h1
+{
+    color : #f42098;
+    text-align: center;
+    font-size: 2.5em;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+h2
+{
+    color : #f42098;
+    text-align: center;
+    font-size: 2em;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+div
+{
+    margin: 20px;
+}
+a
+{
+    color : #2e1824;
+    font-size: 1.5em;
+    border-color: #f42098;
+    border-width: 2px;
+    border-style: dashed;
+    padding: 5px;
+    margin: 5px;
+}
+
+body
+{
+    background-color: #c0bbbb5a;
+    font-family: Impact;
+}
+
+p
+{
+    font-size: 1.2em;
+    color: #2e1824;
+    text-align: justify;
+    margin: 20px;
+}
