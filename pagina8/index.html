@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Prenotazione Viaggio</title>
+    <script src="script8.js"></script>
+</head>
+<body>
+
+    <h1>Prenotazione viaggio</h1>
+
+    <h2>Dati passeggero</h2>
+    Nome: <input type="text" id="nome"><br>
+    Cognome: <input type="text" id="cognome"><br>
+
+    <h2>Scelta città</h2>
+    Partenza: 
+    <select id="partenza">
+        <option value="">--Seleziona--</option>
+        <option value="Milano">Milano</option>
+        <option value="Bergamo">Bergamo</option>
+        <option value="Brescia">Brescia</option>
+        <option value="Como">Como</option>
+        <option value="Cremona">Cremona</option>
+        <option value="Lecco">Lecco</option>
+        <option value="Lodi">Lodi</option>
+        <option value="Mantova">Mantova</option>
+        <option value="Monza">Monza</option>
+        <option value="Pavia">Pavia</option>
+        <option value="Sondrio">Sondrio</option>
+        <option value="Varese">Varese</option>
+    </select> <br>
+    
+    Destinazione: 
+    <select id="destinazione">
+        <option value="">--Seleziona--</option>
+        <option value="Milano">Milano</option>
+        <option value="Bergamo">Bergamo</option>
+        <option value="Brescia">Brescia</option>
+        <option value="Como">Como</option>
+        <option value="Cremona">Cremona</option>
+        <option value="Lecco">Lecco</option>
+        <option value="Lodi">Lodi</option>
+        <option value="Mantova">Mantova</option>
+        <option value="Monza">Monza</option>
+        <option value="Pavia">Pavia</option>
+        <option value="Sondrio">Sondrio</option>
+        <option value="Varese">Varese</option>
+    </select> <br>
+
+    <h2>Data viaggio</h2>
+    Giorno:<input type="number" id="giorno"> <br>
+    <select id="mese">
+        <option value="Gennaio">Gennaio</option>
+        <option value="Febbraio">Febbraio</option>
+        <option value="Marzo">Marzo</option>
+        <option value="Aprile">Aprile</option>
+        <option value="Maggio">Maggio</option>
+    </select> <br>
+    Anno: <input type="number" id="anno"><br>
+
+    <br>
+    <button onclick="conferma()">Conferma prenotazione</button>
+
+    <div id="riepilogo"></div>
+<a href="../index.html">← Torna alla Home</a>
+</body>
+</html>
